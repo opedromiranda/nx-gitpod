@@ -1,6 +1,9 @@
 {
   "version": 2,
   "projects": {
-    "nest-1": "apps/nest-1"
+    "nest-1": "apps/nest-1",
+    "nest-2": "apps/nest-2",
+    "react-1": "apps/react-1",
+    "react-1-e2e": "apps/react-1-e2e"
   }
 }
