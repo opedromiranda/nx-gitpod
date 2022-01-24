@@ -1,12 +1,16 @@
 tasks:
+  - name: yarn install
+    init: >
+      yarn install &&
+      gp sync-done yarn
   - name: nest-1
-    init: yarn install
+    init: gp sync-await yarn
     command: npx nx serve nest-1
   - name: nest-2
-    init: yarn install
+    init: gp sync-await yarn
     command: npx nx serve nest-2
   - name: react-1
-    init: yarn install
+    init: gp sync-await yarn
     command: npx nx serve react-1
 
 ports:
