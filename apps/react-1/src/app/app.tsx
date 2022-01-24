@@ -2,10 +2,12 @@ import styles from './app.module.css';
 import NxWelcome from './nx-welcome';
 
 import { Route, Link } from 'react-router-dom';
+import {ApiFetcher} from "./api-fetcher";
 
 export function App() {
   return (
     <>
+      <ApiFetcher />
       <NxWelcome title="react-1" />
       <div />
 
