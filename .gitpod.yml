@@ -1,0 +1,15 @@
+tasks:
+  - name: nest-1
+    init: yarn build
+    command: npx nx serve nest-1
+  - name: nest-2
+    init: yarn build
+    command: npx nx serve nest-2
+  - name: react-1
+    init: yarn build
+    command: npx nx serve react-1
+
+ports:
+  - port: 3333
+  - port: 3334
+  - port: 4200
